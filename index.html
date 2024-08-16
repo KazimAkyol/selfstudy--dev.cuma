@@ -7,19 +7,19 @@
 </head>
 <body>
 
-    <form action="" method="get">
-
     <h1>ABC Tasarim Programi Kurulum ve Satis Sözlesmesi</h1>
+
+    <form action="" method="post">
 
     <!-- fieldset -->
 <div>
         <fieldset>
             <legend>Sözlesme Onay</legend>
+            <input type="checkbox" id="onay" name="onay" value="1" required>
+            <label for="onay">Asagidaki Bilgilerin dogrulugunu kabul ediyorum ve sözlesmesini onayliyorum.</label>
             <br>
-            Asagidaki Bilgilerin dogrulugunu kabul ediyorum ve sözlesmesini onayliyorum.
-            <br>
-            <input type="kaydet" value="Formu kaydet">
-            <input type="temizle" value="Formu Temizle">
+            <input type="submit" id="fkaydet" name="fkaydet" value="Formu Kaydet">
+            <input type="reset" id="ftemizle" name="ftemizle" value="Formu Temizle">
         </fieldset>
     </div>
 <br>
@@ -52,7 +52,7 @@
             <legend>Diger Bilgiler</legend>
             <h4>Buradaki Alanlar Mesleki Deneyimi Kapsar</h4>
             <label for="">Sektöre Giris Tarihi</label>
-            <input type="text">
+            <input type="date">
             <br><br>
             <label>Sektöre Giris Tarihi</label>
             <input type="radio" name="Belirli Aralik" id="ba1">
@@ -86,7 +86,7 @@
     <fieldset>
         <legend>Sözlesme Kopyasi</legend>
         <label for=""></label>
-        <textarea name="sözlesme_kopyasi" id="sözlesme" placeholder="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam autem excepturi ex. Ipsa, distinctio ipsum alias, quibusdam tempora et exercitationem quos id fugiat nulla maxime magnam suscipit minus nostrum facere hic, dolorem nesciunt nam officiis consectetur vel veniam. Fuga facere laudantium, libero dolor enim commodi illo unde assumenda fugit earum autem omnis eum? Omnis accusantium laboriosam eaque rerum quisquam non, corporis, esse pariatur beatae iure libero eveniet ipsa, deleniti praesentium quidem blanditiis ullam amet qui officia! Eum enim dolores dolor, fuga quas nobis quasi nisi!" style="width: 75%;"></textarea>
+        <textarea cols="35" rows="5" name="sözlesme_kopyasi" id="sözlesme" placeholder="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam autem excepturi ex. Ipsa, distinctio ipsum alias, quibusdam tempora et exercitationem quos id fugiat nulla maxime magnam suscipit minus nostrum facere hic, dolorem nesciunt nam officiis consectetur vel veniam. Fuga facere laudantium, libero dolor enim commodi illo unde assumenda fugit earum autem omnis eum? Omnis accusantium laboriosam eaque rerum quisquam non, corporis, esse pariatur beatae iure libero eveniet ipsa, deleniti praesentium quidem blanditiis ullam amet qui officia! Eum enim dolores dolor, fuga quas nobis quasi nisi!" style="width: 75%;"></textarea>
     </fieldset>
 </div>
     <br>
