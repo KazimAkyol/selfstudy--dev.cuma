@@ -3,9 +3,106 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>HTML Forms Ödevi</title>
 </head>
 <body>
-    
+
+    <form action="" method="get">
+
+    <h1>ABC Tasarim Programi Kurulum ve Satis Sözlesmesi</h1>
+
+    <!-- fieldset -->
+<div>
+        <fieldset>
+            <legend>Sözlesme Onay</legend>
+            <br>
+            Asagidaki Bilgilerin dogrulugunu kabul ediyorum ve sözlesmesini onayliyorum.
+            <br>
+            <input type="kaydet" value="Formu kaydet">
+            <input type="temizle" value="Formu Temizle">
+        </fieldset>
+    </div>
+<br>
+    <div>
+        <fieldset>
+            <legend>Kisisel Bilgiler</legend>
+            <br>
+            <label for="fgüvenlikID">Form Güvenlik ID</label>
+            <input type="text" name="Form Güvenlik ID´si" id="fgüvenlikID" placeholder="Zorunlu Alan">
+            <br><br>
+            <label for="adi">Ad</label>
+            <input type="text" name="Adiniz" id="adi">
+            <br><br>
+            <label for="soyadi">Soyad</label>
+            <input type="text" name="Soyadiniz" id="soyadi">
+            <br><br>
+            <label for="yasi">Yas</label>
+            <input type="text" name="Yasiniz" id="yasi">
+            <br><br>
+            <label for="email">Mail Adresi</label>
+            <input type="text" name="Mail Adresiniz" id="email">
+            <br><br>
+            <label for="dosya">Fotograf Ekle</label>
+            <input type="file" name="Secilen_dosya" id="dosya">
+        </fieldset>
+    </div>
+    <br>
+    <div>
+        <fieldset>
+            <legend>Diger Bilgiler</legend>
+            <h4>Buradaki Alanlar Mesleki Deneyimi Kapsar</h4>
+            <label for="">Sektöre Giris Tarihi</label>
+            <input type="text">
+            <br><br>
+            <label>Sektöre Giris Tarihi</label>
+            <input type="radio" name="Belirli Aralik" id="ba1">
+            <label for="ba1">1-5 yil</label>
+            <br>
+            <input type="radio" name="Belirli Aralik" id="ba2">
+            <label for="ba2">6-10 yil</label>
+            <br>
+            <input type="radio" name="Belirli Aralik" id="ba3">
+            <label for="ba3">11-15 yil</label>
+            <br>
+            <input type="radio" name="Belirli Aralik" id="ba4">
+            <label for="ba4">15-üzeri yil</label>
+            <br><br>
+            <label for="programlamad">Programlama Dilleri</label>
+            <select name="pdilleri" id="programlamad" size="3" multiple>
+                <option value="C#">C#</option>
+                <option value="PHP">PHP</option>
+                <option value="Java">Java</option>
+                <option value="JavaScript">JavaScript</option>
+                <option value="React">React</option>
+                <option value="Node.JS">Node.JS</option>
+            </select>
+        </fieldset>
+    </div>
+    <br>
+
+    <!-- fieldset and textarea -->
+
+<div>
+    <fieldset>
+        <legend>Sözlesme Kopyasi</legend>
+        <label for=""></label>
+        <textarea name="sözlesme_kopyasi" id="sözlesme" placeholder="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam autem excepturi ex. Ipsa, distinctio ipsum alias, quibusdam tempora et exercitationem quos id fugiat nulla maxime magnam suscipit minus nostrum facere hic, dolorem nesciunt nam officiis consectetur vel veniam. Fuga facere laudantium, libero dolor enim commodi illo unde assumenda fugit earum autem omnis eum? Omnis accusantium laboriosam eaque rerum quisquam non, corporis, esse pariatur beatae iure libero eveniet ipsa, deleniti praesentium quidem blanditiis ullam amet qui officia! Eum enim dolores dolor, fuga quas nobis quasi nisi!" style="width: 75%;"></textarea>
+    </fieldset>
+</div>
+    <br>
+    <div>
+        <fieldset>
+            <legend>Mail Listesi</legend>
+            <label for="talep1">Mail Listesine Katilmak <b>Istiyorum</b></label>
+            <input type="radio" name="Anfrage" id="talep1" checked>
+            <br>
+            <label for="talep2">Mail Listesine Katilmak <b><ins>Istemiyorum</ins></b></label>
+            <input type="radio" name="Anfrage" id="talep2">
+        </fieldset>
+    </div>
+            
+     
+
+</form>  
 </body>
 </html>
